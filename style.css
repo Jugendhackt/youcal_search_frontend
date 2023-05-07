@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+nav {
+    background-color: red;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0 30px;
+}
+.title {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 25px;
+}
+main {
+    padding: 10px 30px;
+}
+.section {
+    display: none;
+}
+.section.active {
+    display: block;
+}
+.subsection {
+    display: flex;
+    flex-direction: row;
+}
+.image {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+@media screen and (max-width: 1268px) {
+    .image {
+        width: 100%;
+    }
+    .subsection {
+        display: flex;
+        flex-direction: column;
+    }
+}
